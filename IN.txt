@@ -1,0 +1,70 @@
+Function int_ pow [int_ number, int_ power]
+{
+	New int_ result = 1;
+	New int_ counter = 0;
+	Until [counter < power]
+	{
+		result = result * number;
+		counter = counter + 1;
+	}
+	Retrieve [result];
+}
+
+Procedure fibonacci [int_ n]
+{
+	New int_ a = 0;
+	New int_ b = 1;
+	New int_ c;
+	Output ["Fibonacci: 0 1 "];
+	New int_ i = 3;
+	n = n + 1;
+	Until [i < n]
+	{
+		c = b;
+		b = a + b;
+		Output [b]; Output [" "];
+		a = c;
+		i = i + 1;
+	}
+}
+
+Function bool_ checkzero [int_ n]
+{
+	New bool_ fl;
+	When [n ~ 0]
+	{
+		fl = true;
+	}
+	Otherwise
+	{
+		fl = false;
+	}
+	Retrieve [fl];
+} 
+
+Main
+{
+	New str_ string = Link ["Hello ", "world!"];
+	New int_ length = Measure [string];
+
+	When [length > 1]
+	{
+		fibonacci [length]; Line;
+	}
+	Otherwise 
+	{
+		Output ["Error"]; Line;
+	}
+	
+	New int_ result = pow [2, 4, 5] + 204 / (120 - 62);
+	New bool_ fl = checkzero [result];
+
+	When [fl]
+	{
+		Output ["Result is zero"]; Line;
+	}
+	Otherwise
+	{
+		Output ["Result is not zero"]; Line;
+	}
+}

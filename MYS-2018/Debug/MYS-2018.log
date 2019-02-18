@@ -1,0 +1,12 @@
+﻿  Generator.cpp
+  LexAnalyzer.cpp
+  MFST.cpp
+d:\3_semestr\yap\courseproject\mys-2018\mys-2018\mfst.cpp(174): warning C4474: "sprintf_s" : для строки формата передано слишком много аргументов
+  d:\3_semestr\yap\courseproject\mys-2018\mys-2018\mfst.cpp(174): note: заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 2
+d:\3_semestr\yap\courseproject\mys-2018\mys-2018\mfst.cpp(257): warning C4267: =: преобразование из "size_t" в "short"; возможна потеря данных
+  MYS-2018.cpp
+  PolishNotation.cpp
+  SemAnalyzer.cpp
+  Создание кода...
+d:\3_semestr\yap\courseproject\mys-2018\mys-2018\polishnotation.cpp(142): warning C4715: Poliz::Poliz: значение возвращается не при всех путях выполнения
+  MYS-2018.vcxproj -> D:\3_semestr\YaP\CourseProject\MYS-2018\Debug\MYS-2018.exe
